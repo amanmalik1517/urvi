@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="Width=device-width, initial scale=1">
+    <meta name="keywords" content="HTML,CSS,JavaScript,DOM,jQuery,PHP,SQL,XML,Python,Java,Bootstrap,Web,W3CSS,W3C,tutorials,programming,development,training,learning,quiz,primer,lessons,reference,examples,source code,colors,demos,tips,w3c">
+    <title style="text-align: center; color: white; background-color: black;">HTML Forms</title>
+    <link rel="stylesheet" href="/Styles.css">
+   
+    
+ </head>
+    <body>
+           <a style="float: left;" href="LearnHTML2.html"><img src="PREVIOUS.jpg"></a>
+    <a href="Canvas%20Graphics.html"><img  style="float: right;"src="NEXT.jpg"></a>
+        <br><br><br> 
+    <h1 id="title"><ins>HTML Forms</ins></h1>
+    
+ 
+        
+       
+ <form>
+        <label for="fname">First Name</label>
+                        <br>
+        <input type="text" id="fname" name="fname"  placeholder="Enter Your First Name" autofocus>
+                        <br><br>
+         <label for="fname">Last Name</label>
+                        <br>
+        <input type="text" id="fname" name="fname"  placeholder="Enter Your Last Name">
+</form>
+    <button onclick="document.location='Thank you1.html'">Log in</button>
+        <p>What's Your Sex?</p>
+    <form>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label>
+</form>
+        <p>Select Course..</p>
+        <form action="Thank you1.html" target="_blank" method="post">
+        <input type="radio" id="engineering" name="course" Value="engineering">
+        <label for="engineering">ENGINEERING</label>
+        <input type="radio" id="medical" name="course" value="medical">
+        <label for="medical">MEDICAL</label><br>
+            <input type="submit" value="Submit">
+        </form>
+        <select id="cars" name="cars">
+  <option value="volvo">Volvo</option>
+  <option value="Mercedez Benz" selected>Mercedez Benz</option>
+  <option value="Bugatti">Bugatti</option>
+  <option value="audi">Audi</option>
+        </select><br>
+  <textarea name="message" rows="2" cols="32">
+The cat was playing in the garden.
+    </textarea><br>
+     <textarea name="message" rows="10" cols="30">
+The cat was playing in the garden.
+</textarea><br>
+   <button type="button" onclick="alert('You are a Good person')" style="font-size: 2vw;">I have a Secret</button>
+        <p>«Click_here</p>
+        
+      <form action="Thank you1.html">
+  <fieldset>
+    <legend>Personalia:</legend>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>  
+        
+  <form action="/action_page.php">
+  <input list="browsers">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+        </option>
+  </datalist>
+</form>      
+   <form action="Thank you1.html"
+         oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        0
+        <input type="range" id="a" name="a" value="50">
+       100+
+       <input type="number" id="b" name="b" value="50">
+       =
+       <output name="x" for="a b"></output>
+        <br><br>
+       <input type="submit">        
+        
+        
+        
+        
+        
+        
+        </form>
+        
+       
+    <form action="Thank you1.html" method="post">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username"
+ name="username"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br>
+        <input type="submit">
+        </form>
+    
+    <form action="Thank you1.html">
+        <label for="number">Contact No.</label>
+        <input type="number" id="number" name="number>">
+        <input type="submit">
+        <input type="reset">
+    </form>
+    
+    <form>
+        
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="others" name="gender" value="other">
+        <label for="others">Others</label>
+     </form>
+    
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1">I have a Bike</label>
+    
+     <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" checked>
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a boat </label>
+    <form>
+        <label for="favcolor">Select Your Favorite Color:</label>
+        <input type="color" id="favcolor" name="favcolor">
+        
+        </form>
+   <form>
+        <label for="Budday">Birthday</label>
+        <input type="date" id="Budday" name="Budday">
+        
+        </form>
+    <form>
+        <label for="datemax">Enter a date before 1900-01-01</label>
+        <input type="date" id="datemax" name="datemax" max="1889-12-31"><br>
+        <label for="datemin">Enter a date after 2000-01-01</label>
+        <input type="date" id="datemin" name="datemin" min="2000-01-02">
+        
+        </form>
+        
+     <form>
+        <label for="birthdaytime">Birthday (date and time):</label>
+        <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+    </form>   
+        
+     <form>
+        <label for="email">Enter your Email;</label>
+        <input type="email" id="email" name="email">
+    </form>   
+    <form>
+        <label for="file">Select a file</label>
+        <input type="file"  id="file" name="file">
+        
+        </form>    
+     <form>
+  <label for="bdaymonth">Birthday (month and year):</label>
+  <input type="month" id="bdaymonth" name="bdaymonth">
+        </form>  
+    <form>
+  <label for="quantity">Quantity (between 1 and 5):</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="5" checked>
+</form>
+ <form>
+  <label for="quantity">Quantity:</label>
+  <input type="number" id="quantity" name="quantity" min="0" max="100" step="10" value="30">
+</form>   
+<form>
+  <label for="vol">Volume (between 0 and 50):</label>
+  <input type="range" id="vol" name="vol" min="0" max="50">
+</form>        
+  <form>
+  <label for="gsearch">Search Google:</label>
+  <input type="search" id="gsearch" name="gsearch">
+</form> 
+        <form>
+  <label for="phone">Enter your phone number:</label>
+  <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+        </form>
+        <form>
+  <label for="appt">Select a time:</label>
+  <input type="time" id="appt" name="appt">
+</form>
+        <form>
+  <label for="homepage">Add your homepage:</label>
+  <input type="url" id="homepage" name="homepage">
+</form>
+
+ <form>
+  <label for="week">Select a week:</label>
+  <input type="week" id="week" name="week">
+        </form>
+    
+    
+    <form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John" readonly><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe">
+</form>
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John" disabled><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe">
+</form>
+    <form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" size="50"><br>
+  <label for="pin">PIN:</label><br>
+  <input type="text" id="pin" name="pin" size="4">
+</form>
+        <form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" size="50"><br>
+  <label for="pin">PIN:</label><br>
+  <input type="text" id="pin" name="pin" maxlength="4" size="4">
+</form>
+<form>
+  <label for="files">Select files:</label>
+  <input type="file" id="files" name="files" multiple>
+</form>
+
+ <form action="Thank you1.html">
+  <label for="country_code">Country code:</label>
+  <input type="text" id="country_code" name="country_code"
+  pattern="[A-Za-z]{3}" title="Three letter country code">
+     <input type="submit">
+</form>   
+ <form action="Thank you1.html">
+  <label for="phone">Enter a phone number:</label>
+  <input type="tel" id="phone" name="phone"
+  placeholder="123-45-678"
+  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" title="try again">
+     <input type="submit">
+</form>   
+   <form>
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" required>
+</form>
+ <form>
+  <label for="points">Points:</label>
+  <input type="number" id="points" name="points" value="5" step="3">
+</form>
+<form action="Thank you1.html">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"  autocomplete="on"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" autocomplete="off"><br><br><br>
+    <input type="image" src="NEXT.jpg" alt="Next" width="117" height="42">
+</form>
+    
+   <form>
+  <input list="browsers">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+</form> 
+        
+        <form action="/action_page.php" id="form1">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<label for="lname">Last name:</label>
+<input type="text" id="lname" name="lname" form="form1">
+        
+  <form action="LearnHTML2.html">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+  <input type="submit" formaction="Thank you1.html" value="Submit as Admin">
+</form>      
+        
+   <form action="Thank you1.html" method="post">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <input type="submit" value="Submit">
+  <input type="submit" formenctype="multipart/form-data"
+  value="Submit as Multipart/form-data">
+</form>     
+<form action="Thank you1.html" method="get">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit using GET">
+  <input type="submit" formmethod="post" value="Submit using POST" formtarget="_blank">
+</form>
+   <form action="Thank you1.html" novalidate>
+  <label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email"><br><br>
+  <input type="submit" value="Submit">
+  <input type="submit" formnovalidate="formnovalidate"
+  value="Submit without validation">
+        </form>  <br><br>
+        <a href="LearnHTML2.html"><img src="PREVIOUS.jpg" style="float: left;  "></a>
+        <a href="Canvas%20Graphics.html"><img  style="float: right;"src="NEXT.jpg"></a>
+        <br>
+        <p>.</p>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
